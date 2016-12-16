@@ -5,7 +5,6 @@ from .models import Course
 def index(request):
     context ={
         "courses":Course.objects.all(),
-        "users":User.objects.all(),
     }
     return render(request, 'course/index.html', context)
 
